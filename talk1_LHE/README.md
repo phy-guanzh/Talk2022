@@ -83,7 +83,7 @@ look at those varibles hist, and combined with read_04.cpp. Which cuts are added
 If you complete this step, you have almost finished one samples analysis at LHE and other processes are similar.
 
 
-## change process card
+## Change process card
 
 if you want to change to another process, you can directly change process card first:
 
@@ -93,7 +93,7 @@ generate X Y  > A B C
 the default mode is lowest order production.
 
 
-## change run card
+## Change run card
 generally, for different process, the definations of phase space are different. But you can refer to similar process in genproctions.
 
 for example, if you want to change minimum pt for the charged leptons, you can directly
@@ -103,7 +103,7 @@ for example, if you want to change minimum pt for the charged leptons, you can d
 ```
 
 
-## change models and parameters.
+## Change models and parameters.
 previous examples are under SM model. if your process are defined in other model, you need to find it by yourself and import it.
 there are two links where include many model: 
 
