@@ -1,6 +1,6 @@
 # LHE
 
-LHE is acronym for "The Les Houches Event file format" in Monte Carlo event generators.<br />
+LHE is acronym for ```The Les Houches Event file format``` in Monte Carlo event generators.<br />
 Most of event generators provide a limited set of Matrix Element (ME) processes. they are able to generate additional hard emissions on Matrix Element level, that would otherwise have to be approximated by the Parton Shower in a less precise way. <br />
 
 Why we don not only use caculations by PS or ME?<br />
@@ -52,7 +52,7 @@ go through the LHE events (cms_final.lhe) and combine with slides 2 to understan
 Assumed that we would like to generate $WW\gamma$ leptonic process:
 TASK1: find WWAToLNuLNuA_4f_NLO cards in genproduction and generate gridpack for process WWAToLNuLNuA_4f_NLO, then generate 20000 LHE events for WWAToLNuLNuA_4f_NLO.
 
-trick: use "nohup" command to submit job (https://en.wikipedia.org/wiki/Nohup) or use condor at PKUFARM
+trick: use ```nohup``` command to submit job (https://en.wikipedia.org/wiki/Nohup) or use condor at PKUFARM
 
 ```
 ./submit_condor_gridpack_generation.sh wplustest_4f_LO cards/examples/wplustest_4f_LO/
@@ -87,9 +87,9 @@ If you complete this step, you have almost finished one samples analysis at LHE 
 
 if you want to change to another process, you can directly change process card first:
 
-"
+```
 generate X Y  > A B C 
-"
+```
 the default mode is lowest order production.
 
 
@@ -98,9 +98,9 @@ generally, for different process, the definations of phase space are different. 
 
 for example, if you want to change minimum pt for the charged leptons, you can directly
 
-"
+```
 5  = ptl
-"
+```
 
 
 ## change models and parameters.
@@ -109,18 +109,18 @@ there are two links where include many model:
 
 if you want to change model, you can add extramodels card, and $do not forget to fix model name in process card$.
 
-"
+```
 XXX.tar.gz
-"
+```
 it will be depressed in proper path and you can find destinations in gridpack_generation.sh.
 
 if you want to fix one parameter based on your needs at MG5, customize_cards can help:
 
 for example,
 
-"
+```
 set param_card MASS 1 0.00469
-"
+```
 
 
 
