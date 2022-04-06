@@ -57,7 +57,7 @@ trick: use ```nohup``` command to submit jobs (https://en.wikipedia.org/wiki/Noh
 
 ```
 
-## analyse at LHE level. 
+## Analyse at LHE level. 
 
 After we get LHE events, how to get the information we want from LHE?
 
