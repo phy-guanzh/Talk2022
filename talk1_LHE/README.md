@@ -9,7 +9,6 @@ First, we will start with basic ME processes based on Madgraph5@NLO (MG5@NLO). I
 
 In this section, we will focus on MG5@NLO in [genproduction](https://github.com/cms-sw/genproductions/tree/dace43b7b79c6c7d01d80bb17b96db6d84326830). It is the MC generator repository for CMS, including many events generators and if you request official samples at CMS, this repository is also necessary..
 
-Assume that we would like to generate $WW\gamma$ leptonic process.
 
 
 ## Install
@@ -46,11 +45,7 @@ Then you can use the random number 10 to generate ten events.
 
 Please go through the LHE events (cms_final.lhe) and combine them with slides to understand the contents in the file.
 
-
-Assumed that we would like to generate $WW\gamma$ leptonic process:
-TASK1: find WWAToLNuLNuA_4f_NLO cards in genproduction and generate gridpack for process WWAToLNuLNuA_4f_NLO, then generate 20000 LHE events for WWAToLNuLNuA_4f_NLO.
-
-trick: use ```nohup``` command to submit jobs (https://en.wikipedia.org/wiki/Nohup) or use condor at PKUFARM
+trick: use ```nohup``` command to submit jobs (https://en.wikipedia.org/wiki/Nohup) or use condor at PKUFARM cluster.
 
 ```
 ./submit_condor_gridpack_generation.sh wplustest_4f_LO cards/examples/wplustest_4f_LO/
@@ -138,3 +133,6 @@ If necessary, you can change the default model/paramters and correct correspondi
 
 about MG5@NLO, if you meet problems and need help, you can ask questions in Madgraph5_aMC@NLO launchpad: https://answers.launchpad.net/mg5amcnlo
 
+TASK:
+
+please find WWAToLNuLNuA_4f_NLO cards in genproduction and generate gridpack for process WWAToLNuLNuA_4f_NLO, then generate 20000 LHE events for WWAToLNuLNuA_4f_NLO and look at m_lvlva distribution.
