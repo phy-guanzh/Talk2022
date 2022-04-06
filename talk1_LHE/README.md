@@ -62,6 +62,9 @@ After we get LHE events, how to get the information we want from LHE?
 
 
 ```
+cmsrel CMSSW_10_6_29
+cd CMSSW_10_6_29/src/
+cmsenv
 c++ -o read_wpluslo `root-config --glibs --cflags` CfgParser.cc LHEF.cc -lm read_test.cpp
 ```
 And you need to prepare one cfg file indicate the path/cross-sections of your samples.
