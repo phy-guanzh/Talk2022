@@ -52,6 +52,10 @@ trick: use ```nohup``` command to submit jobs (https://en.wikipedia.org/wiki/Noh
 
 ```
 
+you can also submit jobs by CMSConnect if you have account.
+```
+nohup ./submit_cmsconnect_gridpack_generation.sh wplustest_4f_LO cards/examples/wplustest_4f_LO/ > test.log 2>&1 &
+```
 ## Analyse at LHE level. 
 
 After we get LHE events, how to get the information we want from LHE?
