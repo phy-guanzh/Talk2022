@@ -62,14 +62,14 @@ After we get LHE events, how to get the information we want from LHE?
 
 
 ```
-c++ -o read_04 `root-config --glibs --cflags` CfgParser.cc LHEF.cc -lm read_04.cpp
+c++ -o read_wpluslo `root-config --glibs --cflags` CfgParser.cc LHEF.cc -lm read_test.cpp
 ```
-And $you need to prepare one cfg file indicate the path/cross-sections of your samples$.
+And you need to prepare one cfg file indicate the path/cross-sections of your samples.
 Then, you can get one ROOT file, including many TH1 histograms with different variables.
 
 
 ```
-./read_04 wwa_final_4f.cfg
+./read_wpluslo wpluslo.cfg
 ```
 
 Look at those variables hist, and combined with read_04.cpp. Which cuts are added to select the events?
