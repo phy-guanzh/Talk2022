@@ -3,8 +3,6 @@
 LHE is acronym for ```The Les Houches Event file format``` in Monte Carlo event generators.<br />
 Most of event generators provide a limited set of Matrix Element (ME) processes. they are able to generate additional hard emissions on Matrix Element level, that would otherwise have to be approximated by the Parton Shower in a less precise way. <br />
 
-Why we don not only use caculations by PS or ME?<br />
-
 (typically the Parton Shower (PS) underestimates additional hard emissions and should preferrably be used only the soft and collinear case, whereas the (LO) Matrix Element calculations can describe those better taking into account all possible Feynman diagrams int the hard process). <br />
 
 First, we will start from basic ME processes based on Madgraph5@NLO (MG5@NLO). It is an automatic code that for computing the cross-section and generating events for most of processes at colliders.<br />
@@ -83,7 +81,9 @@ look at those varibles hist, and combined with read_04.cpp. Which cuts are added
 If you complete this step, you have almost finished one samples analysis at LHE and other processes are similar.
 
 
-## Change process card
+# generate the gridpack you want
+
+## step1: Change process card
 
 if you want to change to another process, you can directly change process card first:
 
@@ -93,7 +93,7 @@ generate X Y  > A B C
 the default mode is lowest order production.
 
 
-## Change run card
+## step2: Change the run card
 generally, for different process, the definations of phase space are different. But you can refer to similar process in genproctions.
 
 for example, if you want to change minimum pt for the charged leptons, you can directly
@@ -103,7 +103,7 @@ for example, if you want to change minimum pt for the charged leptons, you can d
 ```
 
 
-## Change models and parameters.
+## additional step: Change the model/parameters or add madspin card.
 previous examples are under SM model. if your process are defined in other model, you need to find it by yourself and import it.
 there are two links where include many model: 
 
@@ -122,7 +122,19 @@ for example,
 set param_card MASS 1 0.00469
 ```
 
+madspin is one module can decay particles because in some cases, you can not decay particles by process card directly. 
 
+then you need to add madspin card.
+
+one example in genproduction:
+ggh_dalitzeffective_5f_LO
 
 Until now, you can define process, generate events at hard process level and analyse them by yourself. 
 if necessary, you can change the default model/paramters and correct correponding cards.
+
+
+
+## HELP
+
+about MG5@NLO, if you meet problems and need help, you can ask questions in Madgraph5_aMC@NLO launchpad: https://answers.launchpad.net/mg5amcnlo
+
