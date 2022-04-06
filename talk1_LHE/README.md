@@ -9,7 +9,7 @@ First, we will start with basic ME processes based on Madgraph5@NLO (MG5@NLO). I
 
 In this section, we will focus on MG5@NLO in [genproduction](https://github.com/cms-sw/genproductions/tree/dace43b7b79c6c7d01d80bb17b96db6d84326830). It is the MC generator repository for CMS, including many events generators and if you request official samples at CMS, this repository is also necessary..
 
-Assume that we would like to generate $WW\gamma$ leptonic process.
+Assume that we would like to generate %WW\gamma% leptonic process.
 
 
 ## Install
