@@ -99,10 +99,10 @@ for example, if you want to change the minimum pt for the charged leptons, you c
 Previous examples are under the SM model. If your process is defined in other models, you need to find it yourself and import it.
 There are two links that include many models: 
 
-If you want to change the model, you can add an extra models card, and $do not forget to fix the model name in the process card$.
+If you want to change the model, you can add an extra models card, and do not forget to fix the model name in the process card.
 there are two links where include many model: 
-
-if you want to change model, you can add extramodels card, and $do not forget to fix model name in process card$.
+1.[FeynRules model database](https://feynrules.irmp.ucl.ac.be/wiki/ModelDatabaseMainPage)
+2.[CMS project generators](https://cms-project-generators.web.cern.ch/cms-project-generators/)
 
 in XXX_extramodels.dat, add the model you need:
 ```
